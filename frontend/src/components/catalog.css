@@ -1,0 +1,35 @@
+.catalog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.viewed {
+  border-color: #4caf50;
+  background-color: #f9fff9;
+}
+
+.viewed-badge {
+  color: #4caf50;
+  font-size: 12px;
+  font-weight: bold;
+}
